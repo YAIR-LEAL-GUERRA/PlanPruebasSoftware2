@@ -1,0 +1,68 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: size 30px;
+    color: aliceblue;
+    background-color: black ;
+}
+
+button{
+    padding: 8px 26px;
+    border-color:blue;
+	background-color:rgb(23, 236, 200);
+	color: #1212be;
+	font-weight: bold;
+	border: 2px;
+	border-radius: 15px 50px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+button:hover{
+    background-color: #91d622;
+}
+input{
+    size: 40px;
+    
+}
+div {
+    background-color: aqua;
+}
+label{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(69, 240, 1);
+}
+
+/*Card*/
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-color: #91d622;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }

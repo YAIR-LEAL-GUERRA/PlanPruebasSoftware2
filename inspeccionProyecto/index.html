@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <!-- Google Font: Source Sans Pro -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+   
+   <!-- summernote -->
+   <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+   <!-- CodeMirror -->
+   <link rel="stylesheet" href="../plugins/codemirror/codemirror.css">
+   <link rel="stylesheet" href="../plugins/codemirror/theme/monokai.css">
+   <!-- SimpleMDE -->
+   <link rel="stylesheet" href="../plugins/simplemde/simplemde.min.css">
+
+   
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="styles.css">
+  <!--<link rel="stylesheet" href="adminlte.min.css">-->
+  <!-- Title -->
+  <title>Inspección Proyecto de Formación</title>
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <header>
+    <center>
+      <h1>Página para la Inspección del Proyecto de formación</h1>
+    </center>
+    <center>
+      <h1>Inventory@App</h1>
+    </center> <br>
+    <center>
+      <h3 id="subtitulos">Fase 2. Ejecución y Aplicación de pruebas de Software</h3>
+      <h3 id="subtitulos">Sobre el Proyecto de Formación ("Inventory@App") y principales discrepancias</h3>
+      <button><a href="../index.html">Volver</a></button>
+    </center>
+    <br>
+    <h4>Teniendo en cuenta que no se realizarán las pruebas sobre el program "TicTacToe", sino sobre el proyecto de formación, se realizarán 
+      las siguientes actividades:
+    </h4> <br>
+    
+    <h4 id="titulo">► Realizar una inspección visual y funcional sobre el producto y determinar, de acuerdo a la especificación de requisitos de software, 
+      las principales discrepancias. 
+    </h4> <br>
+    
+    <center><h3> ALCANCE Y LÍMITES ESPACIALES Y TEMPORALES</h3></center>
+
+    <h4>La aplicación tendrá como función principal, organizar el inventario de cualquier tipo de establecimiento 
+    comercial, pero para el caso concreto nos centraremos en que la aplicación será capaz de tomar el inventario 
+    de una tienda de elementos tecnológicos y otras funcionalidades como facturación y/o venta, módulos que se vienen 
+     implementando, pero estos módulos se encuentran en construcción. Abordaré  funcionalidades tales como; Artículos, Clientes
+     , Usuarios, entre otros módulos. La inspección se muestra en el siguiente vídeo:</h4>
+
+    <div class="col-lg-12"><center>
+      <video width="940" height="500" controls autoplay muted >
+          <source src="../video/inspeccionInventoryapp.mp4" type="video/mp4" />
+      </video>  </center>       
+    </div>
+      <h4 id="titulo">► Realizar un informe corto que relata la experiencia encontrada en la primera inspección del proyecto</h4>
+
+      <h4>► A pesar de ser una aplicación puede interactúar con varias actividades de la empresa, se debe tener en cuenta que 
+        el ámbito sectorial para el que se desarrolla el proyecto es pequeño a posterior mediana escala, puesto que 
+        los recursos también son limitados, sin embargo, ayuda en dar orden u organizar el inventario y sus productos (Tienda “JuniorCell”), 
+        donde se almacenen dentro de un sistema de información que permite identificar cuando se hace necesario reabastecer el inventario,
+         o por el contrario sacar a relucir los productos que se encuentran represados en bodega, además facilitar la ubicación de estos 
+         productos mediante categorías, códigos y fotografías, entre otras características. <br>
+  
+         Si bien gráficamente es amigable, no es del todo funiconal, módulos necesarios como los de facturación y ventas aún se encuentran 
+         en construcción, lo que no permite todavía la implementación del sistema a nivel operativo.
+      </h4> <br>
+    <!------------------------------------------------------------------------------------------->
+  </header>
+  <hr>
+  <main>
+    
+    
+    <hr>
+    <center>
+      <h1>Pruebas de Caja Negra</h1>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN1.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 1 :</ul> Ingreso a la página principal en su parte superior, interfaz gráfica donde todas las personas podrán
+            acceder sin iniciar sesión a información limitada del establecimiento de comercio. Entre la información se
+            encuentra; ¿Quiénes somos?, sercicios, contacto, botones para iniciar sesión como empleado o como cliente, 
+            entre otras opciones.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN2.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 1 :</ul> Resultados mostrados al usuario en Página HTML en parte inferior de la página.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <!------------------------------------------------------------------------------------------->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN3.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 2 :</ul> Ingreso a la interfaz ¿Quiénes somos? desde menú inicial en interfaz principal,
+            donde se muestra mucho mas información en secciones como: Sobre nosotros, artículos, Galería de fotos, 
+            Nuestro Equipo.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN4.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 2 :</ul> Resultados mostrados al usuario en Página HTML sección "Sobre Nosotros".
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!------------------------------------------------------------------------------------------->
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN5.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 2 :</ul> Resultados mostrados al usuario en Página HTML sección "Galería"..
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/CajaNegra/CN6.PNG" width="700px" height="400px" alt="img-galeria">
+          <div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+          </div>
+          <p ><ul>Prueba No. 3 :</ul> Resultados mostrados al usuario en Página HTML desde la sección sercios, desde interfaz
+            principal, donde encontraremos más información de los servicios prestados por el establecimiento (Servicio técnico, clientes
+            satisfechos, preguntas frecuentes, entre otra información).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+ <!------------------------------------------------------------------------------------------->
+ <div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN7.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 3 :</ul>Página en su recorrido, sección Servicio Especializado.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN8.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 4 :</ul> Resultados mostrado al usuario desde la interfaz principal, en el botón de 
+        contacto, mediante un modal, para que pueda comunicarse vía email, con el establecimiento de comercio,
+        a fin de exponer sus dudas, peticiones, quejas, reclamos, sugerencias, entre otros.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<!------------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN9.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 5 :</ul> Ingreso a la interfaz de registro de usuarios, mediante el botón "registrarse"
+        de la interfaz principal, donde solo los clientes pueden registrarse, ya que los usuarios tipo "Empleaods",
+        serán creados por el administrador del sistema  .
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN10.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 6 :</ul> Ingreso a la interfaz de Inicio de sesión de clientes, mediante el botón "Clientes"
+        de la interfaz principal, donde solo los clientes pueden ingresar al sistema, ya que los usuarios tipo "Empleaods",
+        ingresarán a través del botón "Empleados" .
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+
+<!------------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN11.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN12.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN13.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN14.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN15.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 7 :</ul> Ingreso a la interfaz principal de ventas con el Rol de administrador del Sistema. 
+        En esta interfaz encontrarémos 4 módulos así; Administrar Artículos, Administrar Usuarios, Clientes y Vender Artículo.
+        <ul>Administrar Artículos</ul> Compuesto por cuatro opciones; Artículos, Página Web, Catégorias y Reporte PDF Artículos.
+        <ul>Administrar Usuarios</ul> Nos lleva directamente a la interfaz de creación de usuarios.
+        <ul>Clientes</ul> Al igual que la anterior, redirecciona directamente a la interfaz indicada.
+        <ul>Vender Artículo</ul> Da la opción de escoger mediante botones, si deseamos realizar una venta o ver las ventas realizadas.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN16.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 8 :</ul> Ingreso a la interfaz principal de ventas con el rol de empleado, para lo cual está implementada la misma
+        interfaz que el administrador del sistema, restringiendo el módulo de Administrar Artículos en sus opciones de pagina Web, reporte PDF Artículos y categorías
+        donde solo tiene acceso a los Artículos. Por otro lado, no tiene permiso para el módulo Administrar Usuarios, teniendo solo acceso al módulo clientes, y ventas.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<!------------------------------------------------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN17.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN18.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      <img src="img/CajaNegra/CN19.PNG" width="700px" height="400px" alt="img-galeria"><hr>
+      
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 9 :</ul> Ingreso a la interfaz principal en el módulo de ventas opción  "Página Web", accedida desde el rol administrador del sistema
+        , con el fin de que este, actualice los artículos vistos por los clientes logueados. Para lo cual es redireccionado a un nuevo inicio de sesión,
+        paa poder ingresar a la interfaz indicada.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="img/CajaNegra/CN20.PNG" width="700px" height="400px" alt="img-galeria">
+      <div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      </div>
+      <p ><ul>Prueba No. 10 :</ul> Ingreso a la interfaz principal de módulo para las compras de productos por parte 
+        de los cliente, accedida desde el rol cliente del sistema
+        , con el fin de que este, pueda adquirir los artículos que desea comprar.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<!------------------------------------------------------------------------------------------->
+<center>
+  <h1>Pruebas de Caja Blanca</h1>
+  <h2>Técnica del Cámino Básico</h2>
+</center>
+<hr>
+<hr>
+<!------------------------------------------------------------------------------------------->
+<h4>► Se necesita revisar minuciosamente el Código fuente a fin de depurarlo, puesto que se encuentran segmentos de Código
+  aleatorio o comentado sin funcionar, esto puede causar errores o deficiencias a la hora de la ejecución del Software.
+</h4> <br>
+  <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-outline card-info">
+              <div class="card-header">
+                <h3 class="card-title">
+                  CodeMirror
+                </h3>
+              </div>
+              <!-- /Text Area para presentar Código fuente---.card--->
+              <div class="card-body p-0">
+                <textarea id="codeMirrorDemo" class="p-3">
+                  <?php 
+	
+                  require_once "clases/Conexion.php";
+                  $obj= new conectar();
+                  $conexion=$obj->conexion();
+
+                  /*$sql="SELECT * from usuarios where email='admin'";
+                  $result=mysqli_query($conexion,$sql);
+                  $validar=0;
+                  if(mysqli_num_rows($result) > 0){
+                    header("location:inicio.php");
+                  }*/
+                ?>
+
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  <title>Registro Usuarios</title>
+                  <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+                  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+                  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+                  <link rel="stylesheet" href="css/estiloregistro.css">
+                  <script src="librerias/jquery-3.2.1.min.js"></script>
+                  <script src="js/funciones.js"></script>
+
+                </head>
+                <body >
+
+                  <br>
+
+                </textarea>
+                <!-- /Text Area para presentar Código fuente---.card--->
+              </div>
+            </div>
+          </div>
+          <!-- /.col-->
+        </div>
+        <!-- ./row -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+        <div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col">
+        </div>
+        <p ><ul>Revisión Código Fuente :</ul> Como observarmos en el Text Area, encontramos incrustado código PHP, 
+          que apesar de estar comentado, esto puede ocasionar carga adicional innecesaria al sistema, inconveniente
+          que se observa en casi todos los archivos del proyecto. Por lo que se empieza con suprirmirlos, al igual 
+          que la correcta identación del código.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr>
+<!------------------------------------------------------------------------------------------->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="adminlte.min.js"></script>
+<!-- Summernote -->
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- CodeMirror -->
+<script src="../plugins/codemirror/codemirror.js"></script>
+<script src="../plugins/codemirror/mode/css/css.js"></script>
+<script src="../plugins/codemirror/mode/xml/xml.js"></script>
+<script src="../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
+
+    // CodeMirror
+    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      mode: "htmlmixed",
+      theme: "monokai"
+    });
+  })
+</script>
+  </main>
+
+
+
+
+  <BR>
+
+  <footer>
+    <center>
+      <h4>Aprendiz YAIR BERNARDO LEAL GUERRA</h4>
+      <h4 style="color: rgb(6, 77, 170);">Servicio Nacional de Aprendizaje SENA</h4>
+      <h4 style="color: rgb(0, 245, 41);">Ficha No. 2675936 - PROCESAMIENTO DE PRUEBAS DE SOFTWARE</h4>
+    </center>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

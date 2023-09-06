@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Title -->
+  <title>Calcular Edad de una Persona</title>
+</head>
+
+<body>
+  <header class="header">
+    <center><h1>Página para calcular la edad de una persona a partir de la fecha de nacimiento.</h1></center>
+  </header>
+  <div class="salida">
+    <hr />
+    <div class="salida">
+     
+      <h1 id="edad" style="padding-left: 18px; color:rgb(252, 0, 0)"></h1>
+    </div>
+    <hr />
+  </div>
+  Ingrese su edad:
+  <main class="main">
+
+    <input type="date" id="fechaNacimiento" min="1930-01-01" max="2023-12-31" name="fechaNacimiento" >
+    <script>
+      $(".readonly").keydown(function(e){
+         e.preventDefault();
+     });
+     </script>
+   
+    <br><br>
+    
+    <button><a href="../index.html">Volver</a></button>
+
+  
+    <p>4.	Implemente una funcionalidad en Html5 y JavaScript que permita ingresar 
+      la fecha de nacimiento de un usuario y este determine la edad. </p>
+  </main>
+<hr>
+  <footer><center>
+    <p>Aprendiz YAIR BERNARDO LEAL GUERRA</p>
+    <p style="color: antiquewhite;">Servicio Nacional de Aprendizaje SENA</p>
+    <p style="color: antiquewhite;">Ficha No. 2675936 - PROCESAMIENTO DE PRUEBAS DE SOFTWARE</p>
+  </center>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

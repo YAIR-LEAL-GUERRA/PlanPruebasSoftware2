@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Title -->
+  <title>Números Primos</title>
+</head>
+
+<body>
+  <header class="header">
+    <center><h1>Página para válidar si un número es primo</h1></center>
+  </header>
+  <div class="salida">
+    <hr />
+    <div class="salida">
+      <p id="texto-salida" style="padding-left: 18px; color:rgb(252, 0, 0)" ></p>
+    </div>
+    <hr />
+  </div>
+  <main class="main">
+    <label for="entrada">Ingrese el número: <br />
+      <input placeholder="Solo Números" id="entrada"autofocus >
+    </label>
+    <button onclick="verificarPrimo()">Verificar</button>
+    <button><a href="../index.html">Volver</a></button>
+
+    <script>
+
+      function verificarPrimo(){
+
+        let numero = parseInt(document.getElementById("entrada").value);
+        let indicadorPrimo = true;
+        let salida ="";
+
+        if (numero == 1){
+          salida = "1 no es número Primo";
+        }else if (numero > 1){
+          for (let i = 2; i < numero; i++){
+            if(numero % i == 0){
+              indicadorPrimo = false;
+              break;
+            }
+          }
+          if(indicadorPrimo){
+            salida = `El # ${numero}  ES NÚMERO PRIMO.`;
+          }else{
+            salida = `El #${numero} No ES NÚMERO PRIMO.`;
+          }
+        }else{
+          salida = `El # ${numero} No es primo.`;
+        }
+
+        document.getElementById("texto-salida").innerHTML = salida;
+
+      }
+    </script>
+    
+    <p>1. Implemente una funcionalidad en Html5 y JavaScript que permita ingresar un número
+      entero y determine si es o no primo. </p>
+  </main>
+<hr>
+  <footer><center>
+    <p>Aprendiz YAIR BERNARDO LEAL GUERRA</p>
+    <p style="color: antiquewhite;">Servicio Nacional de Aprendizaje SENA</p>
+    <p style="color: antiquewhite;">Ficha No. 2675936 - PROCESAMIENTO DE PRUEBAS DE SOFTWARE</p></center>
+  </footer>
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
